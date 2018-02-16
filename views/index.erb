@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="views/style.css">
+    <title>enquiry</title>
+</head>
+<body>
+   <head>
+       <menu class="nav">
+           <li class="item"><a href="#">home</a></li>
+           <li class="item"><a href="#">anounce</a></li>
+           <li class="item"><a href="#">about</a></li>
+           <li class="item"><a href="#">blog</a></li>
+       </menu>
+   </head>
+   <li><%= @number %></li>
+    <h1 class="title">お問い合わせ</h1>
+    <box class="form">
+       <form action="/answers" method="post">
+        <p class="form-title">お名前</p>
+        <input type="text" name="name">
+        </form>
+        <form action="/answers" method="post">
+        <p class="form-title">Eメール</p>
+        <input type="text" name="email">
+        </form>
+        <form action="/answers" method="post">
+        <p class="form-title">内容</p>
+        <input type="text" name="inside">
+        </form><br>
+        <form action="/answers" method="post">
+        <input type="submit" value="送信">  
+        </form>
+    </box>
+</body>
+</html>
